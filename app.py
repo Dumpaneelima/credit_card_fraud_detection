@@ -48,7 +48,7 @@ if st.button("Predict"):
    
 
 
-data=np.array([[
+  data= np.array([[
     time,
     v1,
     v2,
@@ -79,19 +79,19 @@ data=np.array([[
     v27,
     v28,
     amount
-]])
+  ]]) 
 
 
 
     # scale the input data
-scaler_input=scaler.transform(data)
+  scaler_input=scaler.transform(data)
 
 
     ##make prediction
-prediction=model.predict(data)
-if prediction[0]==0:
+  prediction=model.predict(data)
+  if prediction[0]==0:
     st.success("✅normal transaction")
-else:
+  else:
     st.error("🚨fraud transaction")
 
-                         
+                          
