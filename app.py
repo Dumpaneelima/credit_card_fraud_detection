@@ -48,7 +48,7 @@ if st.button("Predict"):
    
 
 
-data=np.array([
+data=np.array([[
     time,
     v1,
     v2,
